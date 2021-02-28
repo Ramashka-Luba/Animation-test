@@ -203,13 +203,16 @@
     background-color:rgb(118, 186, 231);
     height: 100%;
     width: 10%;
-}
-
-.progress__hover:hover .progress__hover-liner {
     animation-name: progressHover;
     animation-duration: 3s;
     animation-iteration-count:infinite;
     animation-direction: alternate;
+    animation-play-state:paused;
+
+}
+
+.progress__hover:hover .progress__hover-liner {
+    animation-play-state: running;
 }
 
 @keyframes progressHover {
