@@ -1,6 +1,4 @@
-body {
 
-}
 .wrap1,
 .wrap2,
 .wrap3 {
@@ -104,7 +102,118 @@ body {
     }
 }
 
-.wrapper {
-    height: 30vh;
+.wrapper1 {
     border:solid 1px brown;
+    padding: 100px 300px;
+}
+.progress {
+    height: 80px;
+    background-color:rgb(236, 250, 252);
+}
+.progress__line {
+    background-color:rgb(118, 186, 231);
+    height: 100%;
+    width: 0%;
+}
+
+.wrapper1:hover .progress__line {
+    animation-name: progress;
+    animation-duration: 3s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+}
+
+.wrapper2 {
+    border:solid 1px brown;
+    padding: 100px 300px;
+}
+.wrapper2:hover .progress__line {
+    animation-name: progress;
+    animation-duration: 5s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite;
+}
+
+@keyframes progress {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+.wrapper3 {
+    height: 40vh;
+    border:solid 1px brown;
+}
+.ball {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color:coral;
+}
+
+.wrapper3:hover .ball {
+    animation-name: moveBall;
+    animation-duration: 3s; 
+    animation-iteration-count:infinite;
+    animation-timing-function:linear;
+}
+
+@keyframes moveBall {
+    20% {
+        transform: translate(100px, 330px);
+    }
+    30% {
+        transform: translate(250px, 100px);
+    }
+    40% {
+        transform: translate(400px, 330px);
+    }
+    60% {
+        transform: translate(550px, 150px);
+    }
+    70% {
+        transform: translate(700px, 330px);
+    }
+    80% {
+        transform: translate(850px, 200px);
+    }
+    90% {
+        transform: translate(1000px, 330px);
+    }
+    95% {
+        transform: translate(1150px, 250px);
+    }
+    to {
+        transform: translate(1300px, 330px);
+    }
+}
+
+.wrapper4 {
+    border:solid 1px brown;
+    padding: 100px 300px;
+}
+.progress__hover {
+    height: 80px;
+    background-color:rgb(236, 250, 252);
+}
+.progress__hover-liner {
+    background-color:rgb(118, 186, 231);
+    height: 100%;
+    width: 10%;
+}
+
+.progress__hover:hover .progress__hover-liner {
+    animation-name: progressHover;
+    animation-duration: 3s;
+    animation-iteration-count:infinite;
+    animation-direction: alternate;
+}
+
+@keyframes progressHover {
+    to {
+        width: 100%;
+    }
 }
