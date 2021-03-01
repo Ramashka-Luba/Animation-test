@@ -171,19 +171,19 @@
     40% {
         transform: translate(400px, 330px);
     }
-    60% {
+    50% {
         transform: translate(550px, 150px);
     }
-    70% {
+    60% {
         transform: translate(700px, 330px);
     }
-    80% {
+    70% {
         transform: translate(850px, 200px);
     }
-    90% {
+    80% {
         transform: translate(1000px, 330px);
     }
-    95% {
+    90% {
         transform: translate(1150px, 250px);
     }
     to {
@@ -219,4 +219,73 @@
     to {
         width: 100%;
     }
+}
+/* ********* Sprite ********* */
+.wrapper5 {
+    height: 20vh;
+    border:solid 1px brown;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.heart {
+    width: 100px;
+    height: 100px;
+    background-image: url(./heart-sprite.png);
+}
+
+.wrapper5:hover .heart {
+    background-position: -2900px 0;
+    transition: all 2s steps(29);
+}
+
+
+/*********************/
+.wrapper6{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border:solid 1px brown;
+}
+.wrapper6__content {
+    width: 50%;
+    height: 70%;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0 0 10px rgb(194, 188, 188);
+}
+.wrapper6__right-box {
+    width: 30%;
+    height: 100%;
+    box-shadow: 0 0 10px rgb(194, 188, 188);
+    background-color:rgb(252, 252, 252)
+}
+
+.wrapper6__link {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    color: black;
+    padding-bottom: 40px;
+    font-size: 24px;
+}
+.wrapper6__link:first-child {
+    padding-top: 150px;
+}
+.wrapper6__link:hover {
+    background-color:cornflowerblue;
+    color:cornsilk;
+    border-radius: 7px;
+}
+
+.left-icon {
+    height: 50px;
+    width: 50px;
+    margin: 50px;
+}
+.left-icon:hover {
+    background-color:cornflowerblue;
+    border-radius: 7px;
 }
