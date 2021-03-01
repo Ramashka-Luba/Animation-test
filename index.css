@@ -263,7 +263,7 @@
     transition: 1s;
 }
 
-.wrapper6__content:hover .left-icon {
+.wrapper6__content:hover .wrapper6__nav {
     transform: translateX(0);
     transition: 1s;
 }
@@ -294,13 +294,40 @@
     border-radius: 7px;
 }
 
-.left-icon {
-    height: 50px;
-    width: 50px;
-    margin: 50px;
+
+.wrapper6__nav {
     transform: translateX(120px);
+
 }
-.left-icon:hover {
+.wrapper6__hamburger {
+    width: 80px;
+    height: 50px;
+    margin: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:flex-end;
+}
+
+.wrapper6__hamburger-item {
+    display: block;
+    height: 4px;
+    width: 60px;
+    background-color: #000;
+    border-radius: 2px;
+    margin-bottom: 7px;
+    margin-right: 10px;
+}
+.wrapper6__hamburger-item:last-child {
+    width: 40px;
+    margin-bottom: 0;
+}
+
+
+    .wrapper6__hamburger:hover {
     background-color:cornflowerblue;
     border-radius: 7px;
+}
+.wrapper6__hamburger:hover .wrapper6__hamburger-item {
+    background-color: #fff;
 }
